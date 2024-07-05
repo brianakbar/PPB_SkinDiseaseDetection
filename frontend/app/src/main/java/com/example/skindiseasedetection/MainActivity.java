@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView selectedImage;
     private Bitmap selectImageBitmap = null;
     private float selectedImageRotation = 0f;
-    private String serverURL = "http://192.168.100.147:5000";
+    private String serverURL = "https://af6d-125-164-145-41.ngrok-free.app";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

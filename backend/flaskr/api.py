@@ -12,7 +12,7 @@ from keras._tf_keras.keras.applications.resnet50 import preprocess_input
 
 bp = Blueprint("api_bp", __name__)
 
-class_labels = ['cellulitis', 'impetigo', 'athlete-foot', 'nail-fungus', 'ringworm', 'cutaneous-larva-migrans', 'chickenpox', 'shingles']
+class_labels = ['cellulitis', 'impetigo', 'athlete-foot', 'nail-fungus', 'ringworm', 'healthy', 'cutaneous-larva-migrans', 'chickenpox', 'shingles']
 model = load_model('./model/skin_disease_model.keras')
 
 @bp.route("/", methods=["GET", "POST"])
